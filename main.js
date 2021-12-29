@@ -97,7 +97,7 @@ const sendButMessage = (id, text1, desc1, but = [], options = {}) => {
       };
       alpha.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options);
     };
-let kl =  'p, ki ni Mhycka'
+let kl =  'Tes, ini Mhycka'
 try {
 sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, kl, 'LordUserbot^4.5.0 | Created By MhyckaHY' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
 } catch {
