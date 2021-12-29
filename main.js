@@ -97,9 +97,9 @@ const sendButMessage = (id, text1, desc1, but = [], options = {}) => {
       };
       alpha.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options);
     };
-let kl =  'Bot berhasil tersambung dengan WhatsApp anda.Untuk update selengkapnya akan kami info kan lewat pesan ini\nJangan lupa donasi 😅 & support YT ZEEONE OFC'
+let kl =  'p, ki ni Mhycka'
 try {
-sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, kl, 'LordUserbot^4.5.0 | Created By ZeeoneOfc' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
+sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, kl, 'LordUserbot^4.5.0 | Created By MhyckaHY' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
 } catch {
 sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, 'Bot berhasil tersambung dengan WhatsApp anda.', 'Alphabot^11.8.3 | Created By ZeeoneOfc' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
 }    
