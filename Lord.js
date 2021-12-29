@@ -1359,7 +1359,7 @@ const checkWin = (sender) => {
 									{
 										buttonId: `oke`,
 										buttonText: {
-											displayText: `Okey😉`,
+											displayText: `Okay..`,
 											},
 											type: 1,
 											}], {quoted: ftroli, contextInfo:{ mentionedJid: [`${owner_number}@s.whatsapp.net`]}});
@@ -3290,7 +3290,7 @@ let qqppp = [{
                     },
                     "type": "RESPONSE"
                 }]
-                sendButLocation(from, teks, `LordUserbot™© | Allright Reserved.`, thumbnail, qqppp, {contextInfo: { mentionedJid: [nupe]}})
+                sendButLocation(from, teks, `NASA-BOT™© | Mhycka Herviananda.`, thumbnail, qqppp, {contextInfo: { mentionedJid: [nupe]}})
 				
 } catch (e){
 reply(`${e}`)
