@@ -105,7 +105,7 @@ const lolkey = '78bd89cd7b4d6205e3e18061'
 
 let single = false
 let prefa = setting.prefix
-let offline = false
+let offline = true
 let antitrol = true 
 
 let hit_today = []
@@ -127,7 +127,7 @@ let multiprefix = true
 let nopref = false
 let autovn = false
 let ngetik = false
-let menusimple = false
+let menusimple = treu
 let Mloc = false
 let autoregister = setting.user_register
 let autorespon = setting.autorespon
@@ -448,7 +448,7 @@ var waktoo = date.getHours();
 					sewabot: ` 「 *SEWA BOT* 」 \n\nBerikut list sewa bot kami
 
 •> 25k / BULAN (PREMIUM)
-Isi sendiri
+
 
 Minat? Pm wa.me/${owner_number}`,
 					ban: 'Maaf Lord Nomor Kamu Sudah Di Banned!',
