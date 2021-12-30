@@ -105,7 +105,7 @@ const lolkey = '78bd89cd7b4d6205e3e18061'
 
 let single = false
 let prefa = setting.prefix
-let offline = true
+let offline = false
 let antitrol = true 
 
 let hit_today = []
@@ -127,7 +127,7 @@ let multiprefix = true
 let nopref = false
 let autovn = false
 let ngetik = false
-let menusimple = true
+let menusimple = false
 let Mloc = false
 let autoregister = setting.user_register
 let autorespon = setting.autorespon
