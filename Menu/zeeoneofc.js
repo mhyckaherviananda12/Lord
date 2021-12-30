@@ -9,7 +9,7 @@ return`Hello ${pushname}🤗 Saya ${namabot}
 💹 Balance : ${getBalance(sender, balance)}
 
 
-*Owner-Menu*
+ℒ⃝🤴🏻 *Owner-Menu*
 ${simbolnya} ${prefix}bc [text]
 ${simbolnya} ${prefix}bcimage [reply foto]
 ${simbolnya} ${prefix}ban @tag
@@ -31,7 +31,7 @@ ${simbolnya}  > [eval]
 ${simbolnya}  => [async]
 ${simbolnya}  $ [cmd termux]
 
-*Download-Menu*
+ℒ⃝🗃️ *Download-Menu*
 ${simbolnya} ${prefix}play [query]
 ${simbolnya} ${prefix}ytmp3 [url]
 ${simbolnya} ${prefix}ytmp4 [url]
@@ -47,7 +47,7 @@ ${simbolnya} ${prefix}tiktokaudio [url]
 ${simbolnya} ${prefix}tiktoknowm [url]
 ${simbolnya} ${prefix}mediafire [url]
 
-*Convert-Menu*
+ℒ⃝🖼️ *Convert-Menu*
 ${simbolnya} ${prefix}sticker [tag foto/vid]
 ${simbolnya} ${prefix}swm [text|text2]
 ${simbolnya} ${prefix}take [text|text2]
@@ -69,17 +69,17 @@ ${simbolnya} ${prefix}detikvn [durasi]
 ${simbolnya} ${prefix}tupai [reply music]
 ${simbolnya} ${prefix}vibrato [reply music]
 
-*Editor-Menu*
+ℒ⃝🎨 *Editor-Menu*
 ${simbolnya} ${prefix}memegen teks atas | teks bawah
 ${simbolnya} ${prefix}stickmeme teks
 
-*Search-Menu*
+ℒ⃝🔍 *Search-Menu*
 ${simbolnya} ${prefix}pinterest [query]
 ${simbolnya} ${prefix}wikipedia [query]
 ${simbolnya} ${prefix}playstore [query]
 ${simbolnya} ${prefix}yts [query]
 
-*Storage-Menu*
+ℒ⃝🗂️ *Storage-Menu*
 ${simbolnya} ${prefix}addrespon [pesan|respon]
 ${simbolnya} ${prefix}delrespon [pesan]
 ${simbolnya} ${prefix}listrespon
@@ -99,7 +99,7 @@ ${simbolnya} ${prefix}addsticker [text]
 ${simbolnya} ${prefix}liststicker
 ${simbolnya} ${prefix}delstik [text]
 
-*Fun-Menu*
+ℒ⃝🌀 *Fun-Menu*
 ${simbolnya} ${prefix}slot
 ${simbolnya} ${prefix}truth
 ${simbolnya} ${prefix}dare
@@ -108,7 +108,7 @@ ${simbolnya} ${prefix}delvote
 	vote
 	devote
    
-*Group-Menu*
+ℒ⃝🌐 *Group-Menu*
 ${simbolnya} ${prefix}sider [reply pesan bot]
 ${simbolnya} ${prefix}afk [reason]
 ${simbolnya} ${prefix}hidetag [text]
@@ -131,40 +131,8 @@ ${simbolnya} ${prefix}welcome [on/off]
 ${simbolnya} ${prefix}antilink [on/off]
 ${simbolnya} ${prefix}antitroli [on/off]
 
-*Anime-Menu* 
-${simbolnya} ${prefix}loli
-${simbolnya} ${prefix}neko
-${simbolnya} ${prefix}waifu
-${simbolnya} ${prefix}shinobu
-${simbolnya} ${prefix}megumin
-${simbolnya} ${prefix}bully
-${simbolnya} ${prefix}cuddle
-${simbolnya} ${prefix}cry
-${simbolnya} ${prefix}hug
-${simbolnya} ${prefix}awoo
-${simbolnya} ${prefix}kiss
-${simbolnya} ${prefix}lick
-${simbolnya} ${prefix}pat
-${simbolnya} ${prefix}smug
-${simbolnya} ${prefix}bonk
-${simbolnya} ${prefix}yeet
-${simbolnya} ${prefix}blush
-${simbolnya} ${prefix}smile
-${simbolnya} ${prefix}wave
-${simbolnya} ${prefix}highfive
-${simbolnya} ${prefix}handhold
-${simbolnya} ${prefix}nom
-${simbolnya} ${prefix}bite
-${simbolnya} ${prefix}glomp
-${simbolnya} ${prefix}slap
-${simbolnya} ${prefix}kill
-${simbolnya} ${prefix}happy
-${simbolnya} ${prefix}wink
-${simbolnya} ${prefix}poke
-${simbolnya} ${prefix}dance
-${simbolnya} ${prefix}cringe
-   
-*Limit-Menu*
+
+ℒ⃝📊 *Limit-Menu*
 ${simbolnya} ${prefix}topbalance
 ${simbolnya} ${prefix}toplimit
 ${simbolnya} ${prefix}limit
@@ -174,7 +142,7 @@ ${simbolnya} ${prefix}buylimit [nominal]
 ${simbolnya} ${prefix}giftlimit @tag | nominal
 ${simbolnya} ${prefix}buyprem [need 1k limit]
    
-*Maker-Menu*
+ℒ⃝🎨 *Maker-Menu*
 ${simbolnya} ${prefix}nuliskanan [text]
 ${simbolnya} ${prefix}nuliskiri [text]
 ${simbolnya} ${prefix}foliokanan [text]
@@ -191,7 +159,7 @@ ${simbolnya} ${prefix}smoke [text]
 ${simbolnya} ${prefix}burnpaper [text]
 ${simbolnya} ${prefix}grass [text]
 
-*Others-Menu*
+ℒ⃝🏷️ *Others-Menu*
 ${simbolnya} ${prefix}pantun
 ${simbolnya} ${prefix}faktaunik
 ${simbolnya} ${prefix}donasi
