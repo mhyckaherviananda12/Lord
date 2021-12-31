@@ -110,7 +110,7 @@ let antitrol = true
 
 let hit_today = []
 let blocked = []
-let limitawal = "100" 
+let limitawal = "1000" 
 let namabot = setting.botname
 let owner_name = setting.ownername
 let owner_number = setting.ownerNumber
@@ -447,7 +447,7 @@ var waktoo = date.getHours();
 					limit: 'Limit kamu habis lord , Silahkan beli dengan #buylimit <nominal> atau minta gift dari user lain',
 					sewabot: ` 「 *SEWA BOT* 」 \n\nBerikut list sewa bot kami
 
-N ➳ 1 MINGGU = Rp 10.000
+➳ 1 MINGGU = Rp 10.000
 ➳ 2 MINGGU = Rp 15.000
 ➳ 3 MINGGU = Rp 20.000
 ➳ 1 BULAN    = Rp 25.000
@@ -2092,7 +2092,7 @@ Alasan : ${reason}`, [sender], true)
 										sendButLocation(from, sewabotkak(), `Sewa bot om?`,  thumbnail, gakloo,{})
 										break
 						case 'donasi':
-									reply('Isi sendiri')
+									reply('wa.me/6285340409831')
 									break
 						case 'join':case 'joingc':
 									if (!q) return reply('Linknya?')
@@ -2506,21 +2506,21 @@ Alasan : ${reason}`, [sender], true)
 						case 'me': case 'myinfo': case 'info': case 'profile': case 'profil':{
 									var p = await Zeeone.getStatus(`${sender}`, MessageType.text)
 									let cek = ms(await premium.getPremiumExpired(sender, _premium) - Date.now())
-									Zeeone.sendMessage(from, pp_userz, image, {thumbnail:pp_userz, caption:` * USER PROFILE*
+									Zeeone.sendMessage(from, pp_userz, image, {thumbnail:pp_userz, caption:` *USER PROFILE*
 
 📛 Nama : ${pushname==undefined?sender.split("@")[0]:pushname}
 🎯 Bio : ${p.status==undefined?`Not Found`:p.status}
 💬 Tag : @${sender.split("@")[0]}
-🆔 Api : wa.me/${sender.split("@")[0]}
+🔥 Api : wa.me/${sender.split("@")[0]}
 
-⬣ Limit : ${isPremium ? 'Unlimited Premium' : `${getLimit(sender, limitawal, limit)} / ${limitawal}`}
-⬣ Balance : ${getBalance(sender, balance)}
-⬣ Role : ${role}
-⬣ Level : ${getLevelingLevel(sender)}
-⬣ Xp : ${getLevelingXp(sender)}
-⬣ Status : ${isOwner?`Owner`:isPremium?`Premium User
-⬣ Expired Prem : ${cek.days} d, ${cek.hours} h, ${cek.minutes} m, ${cek.seconds} s`:isUser?`Free User`:`Belum Daftar`}
-⬣ Baned : ${isBanned?`Terbanned`:`Tidak Terbanned`}`, quoted: Ofc, contextInfo:{mentionedJid:[sender]}})
+💳 Limit : ${isPremium ? 'Unlimited Premium' : `${getLimit(sender, limitawal, limit)} / ${limitawal}`}
+💶 Balance : ${getBalance(sender, balance)}
+💱 Role : ${role}
+🎚️ Level : ${getLevelingLevel(sender)}
+🏦 Xp : ${getLevelingXp(sender)}
+💌 Status : ${isOwner?`Owner`:isPremium?`Premium User
+⏲️ Expired Prem : ${cek.days} d, ${cek.hours} h, ${cek.minutes} m, ${cek.seconds} s`:isUser?`Free User`:`Belum Daftar`}
+🚫 Baned : ${isBanned?`Terbanned`:`Tidak Terbanned`}`, quoted: Ofc, contextInfo:{mentionedJid:[sender]}})
 									}
 									break
 						case 'tomp3': case 'tomusic': case 'toaudio':
