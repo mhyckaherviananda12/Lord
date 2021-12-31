@@ -116,7 +116,7 @@ let owner_name = setting.ownername
 let owner_number = setting.ownerNumber
 let gamewaktu = "3" 
 let numbernye = "0" 
-let simbolnya = "•"
+let simbolnya = "➳"
 let petik = '```'
 let enter = '\n'
 let notnot = `NOTE:${enter}Jika whatsapp mod kamu belum support button silahkan tonton video ini https://youtu.be/ERGID4Fmo9w`
@@ -447,20 +447,23 @@ var waktoo = date.getHours();
 					limit: 'Limit kamu habis lord , Silahkan beli dengan #buylimit <nominal> atau minta gift dari user lain',
 					sewabot: ` 「 *SEWA BOT* 」 \n\nBerikut list sewa bot kami
 
-•> 25k / BULAN (PREMIUM)
+N ➳ 1 MINGGU = Rp 10.000
+➳ 2 MINGGU = Rp 15.000
+➳ 3 MINGGU = Rp 20.000
+➳ 1 BULAN    = Rp 25.000
 
-
-Minat? Pm wa.me/${owner_number}`,
+*MINAT? PM:*
+_*wa.me/${owner_number}*_`,
 					ban: 'Maaf Lord Nomor Kamu Sudah Di Banned!',
 					error: 'Error Lord, Mungkin Lagi Diperbaiki',
-					errorLink: 'Link Error Lord',
-					succes: '```[ ✓ ]``` Sukses Lord',
+					errorLink: 'Link Error kak',
+					succes: '```[ ✓ ]``` Sukses kak',
 					only: {
-						personal: 'Only Private Chat Lord',
-						admin: 'Khusus Admin Group Lord',
-						group: 'Khusus Dalam Grup Lord',
-						 prem: 'Khusus User Premium Lord',
-						owner: 'Khusus Owner Bot Lord',
+						personal: 'Only Private Chat kak',
+						admin: 'Khusus Admin Group kak',
+						group: 'Khusus Dalam Grup kak',
+						 prem: 'Khusus User Premium kak',
+						owner: 'Khusus Owner Bot kak',
 						 }
 					} 
 	    const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: thumbnail, surface: 200, message: `「 𝐑𝐔𝐍𝐓𝐈𝐌𝐄 」\n${runtime2}`, orderTitle: 'zeeoneofc', sellerJid: '0@s.whatsapp.net'}}, sendEphemeral: true}
