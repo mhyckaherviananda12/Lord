@@ -483,7 +483,7 @@ _*wa.me/${owner_number}*_`,
 				return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')
 				}
 			const reply = (teks) => {
-             res = Zeeone.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 12-04-2006, "message": teks, "footerText": "NASA by Mhycka", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftroli})
+             res = Zeeone.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 12042006, "message": teks, "footerText": "NASA by Mhycka", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftroli})
              Zeeone.relayWAMessage(res)
         }
 			const sendImage = (teks) => {
