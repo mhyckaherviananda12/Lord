@@ -2091,10 +2091,10 @@ Alasan : ${reason}`, [sender], true)
 											},
 										"type": "RESPONSE"
 										}]
-										sendButLocation(from, sewabotkak(), `Sewa bot om?`,  thumbnail, gakloo,{})
+										sendButLocation(from, sewabotkak(), `Sewa bot kak?`,  thumbnail, gakloo,{})
 										break
 						case 'donasi':
-									reply('wa.me/6285340409831')
+									reply('╭─❒ *Donation* ❒\n│➳ *wa.me/6285340409831*\n│➳ *bit.ly/mhyckaaa*\n | ➳ *bit.ly/mhyckaherviananda*\n╰❒ *Thank you*')
 									break
 						case 'join':case 'joingc':
 									if (!q) return reply('Linknya?')
