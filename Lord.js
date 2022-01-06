@@ -463,6 +463,7 @@ Minat? Pm wa.me/${owner_number}`,
 						owner: 'Khusus Owner Bot Lord',
 						 }
 					} 
+const ofrply = fs.readFileSync('./image/thumb.jpg')
 	    const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: thumbnail, surface: 200, message: `「 𝐑𝐔𝐍𝐓𝐈𝐌𝐄 」\n${runtime2}`, orderTitle: 'zeeoneofc', sellerJid: '0@s.whatsapp.net'}}, sendEphemeral: true}
         const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `「 𝐑𝐔𝐍𝐓𝐈𝐌𝐄 」\n${runtime2}`,jpegThumbnail: thumbnail}}}
         const fvn = {key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":99999,"ptt": "true"}} } 
@@ -479,8 +480,9 @@ Minat? Pm wa.me/${owner_number}`,
 				return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')
 				}
 			const reply = (teks) => {
-				return Zeeone.sendMessage(from, teks, text, {quoted: Ofc, contextInfo: { mentionedJid: parseMention(teks) }})
-				}
+             res = Zeeone.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "BotWhatsApp by Mhycka", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftroli})
+             Zeeone.relayWAMessage(res)
+                                }
 			const sendImage = (teks) => {
 				Zeeone.sendMessage(from, teks, image, {quoted:Ofc})
 				 }
