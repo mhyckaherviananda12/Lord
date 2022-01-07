@@ -116,7 +116,7 @@ let owner_name = setting.ownername
 let owner_number = setting.ownerNumber
 let gamewaktu = "3" 
 let numbernye = "0" 
-let simbolnya = "•"
+let simbolnya = "➳"
 let petik = '```'
 let enter = '\n'
 let notnot = `NOTE:${enter}Jika whatsapp mod kamu belum support button silahkan tonton video ini https://youtu.be/ERGID4Fmo9w`
@@ -1445,7 +1445,7 @@ if (isCmd && !isOwner && !isCreator && !Ofc.key.fromMe && !isUser) return sendBu
         if (!Ofc.key.fromMe) return
         if ((isMedia && !Ofc.message.videoMessage) || isQuotedImage) {
           ger = isQuotedImage
-            ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
+            ? JSON.parse(JSON.stringify(Ofc).replace("quotedM", "m")).message
                 .extendedTextMessage.contextInfo
             : Ofc;
           owgi = await Zeeone.downloadAndSaveMediaMessage(ger);
@@ -1813,7 +1813,7 @@ Pastikan Transfer Limit Benar`)
 									if (!isPremium) return reply(mess.only.prem)
 									if (args.length < 1) return reply('Masukkan link mediafire')
 									if(!isUrl(args[0]) && !args[0].includes('mediafire')) return reply('Linknya Error')
-									reply2(mess.wait)
+									reply(mess.wait)
 									teks = args.join(' ')
 									res = await mediafireDl(teks)
 									result = ` *MEDIAFIRE DOWNLOAD*
