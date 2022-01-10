@@ -1367,7 +1367,7 @@ const checkWin = (sender) => {
 									{
 										buttonId: `oke`,
 										buttonText: {
-											displayText: `Okey😉`,
+											displayText: `Okay\n`,
 											},
 											type: 1,
 											}], {quoted: ftroli, contextInfo:{ mentionedJid: [`${owner_number}@s.whatsapp.net`]}});
@@ -1386,9 +1386,9 @@ const checkWin = (sender) => {
         heheh = ms(Date.now() - waktu)
         sendButMessage(Ofc.key.remoteJid, `@${owner_number} Sedang Offline!\n\n*Alasan :* ${alasan}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`, `© ${namabot}`, [
 									{
-										buttonId: `menu`,
+										buttonId: `oke`,
 										buttonText: {
-											displayText: `🔖 Menu`,
+											displayText: Okay\n`,
 											},
 											type: 1,
 											}], {quoted : ftroli, contextInfo:{ mentionedJid: [`${owner_number}@s.whatsapp.net`]}});
