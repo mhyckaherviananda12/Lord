@@ -1367,7 +1367,7 @@ const checkWin = (sender) => {
 									{
 										buttonId: `oke`,
 										buttonText: {
-											displayText: `Okay\n`,
+											displayText: `Okay..`,
 											},
 											type: 1,
 											}], {quoted: ftroli, contextInfo:{ mentionedJid: [`${owner_number}@s.whatsapp.net`]}});
@@ -1388,7 +1388,7 @@ const checkWin = (sender) => {
 									{
 										buttonId: `oke`,
 										buttonText: {
-											displayText: Okay\n`,
+											displayText: Okay..`,
 											},
 											type: 1,
 											}], {quoted : ftroli, contextInfo:{ mentionedJid: [`${owner_number}@s.whatsapp.net`]}});
