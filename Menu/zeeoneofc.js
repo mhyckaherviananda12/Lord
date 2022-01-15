@@ -163,7 +163,6 @@ ${simbolnya} ${prefix}grass [text]
 ${simbolnya} ${prefix}pantun
 ${simbolnya} ${prefix}faktaunik
 ${simbolnya} ${prefix}donasi
-${simbolnya} ${prefix}asupan
 ${simbolnya} ${prefix}nulis
 ${simbolnya} ${prefix}getnumber [reply user]
 ${simbolnya} ${prefix}getpic @tag
