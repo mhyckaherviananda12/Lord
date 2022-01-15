@@ -10,6 +10,8 @@ return`Hello ${pushname}🤗 Saya ${namabot}
 
 
 ℒ⃝🤴🏻 *Owner-Menu*
+${simbolnya} ${prefix}on
+${simbolnya} ${prefix}off [alasan] 
 ${simbolnya} ${prefix}bc [text]
 ${simbolnya} ${prefix}bcimage [reply foto]
 ${simbolnya} ${prefix}ban @tag
