@@ -149,17 +149,6 @@ ${simbolnya} ${prefix}nuliskanan [text]
 ${simbolnya} ${prefix}nuliskiri [text]
 ${simbolnya} ${prefix}foliokanan [text]
 ${simbolnya} ${prefix}foliokiri [text]
-${simbolnya} ${prefix}naruto [text]
-${simbolnya} ${prefix}shadow [text]
-${simbolnya} ${prefix}lovemsg [text]
-${simbolnya} ${prefix}doubleheart [text]
-${simbolnya} ${prefix}coffecup [text]
-${simbolnya} ${prefix}lovetext [text]
-${simbolnya} ${prefix}butterfly [text]
-${simbolnya} ${prefix}romantic [text]
-${simbolnya} ${prefix}smoke [text]
-${simbolnya} ${prefix}burnpaper [text]
-${simbolnya} ${prefix}grass [text]
 
 ℒ⃝🏷️ *Others-Menu*
 ${simbolnya} ${prefix}pantun
