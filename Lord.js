@@ -1905,7 +1905,7 @@ _Tunggu Proses Upload Media_`
 									if (!q) return reply(`Example : ${prefix+command} https://youtu.be/kxjMsMST4Rw`)
 									let isLinks = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
 									if (!isLinks) return reply('Eror')
-									reply(mess.wait)
+									reply2(mess.wait)
 									var srch = args.join(' ')
 									aramas = await yts(srch);
 		  	 					 server = 'en68'
@@ -1922,7 +1922,7 @@ _Tunggu Proses Upload Media_`
 		                       })
 		                        })
 		                        } catch (err) {
-		                        reply(mess.error)
+		                        reply2(mess.error)
 		                        }
 							}
 		                   break      
@@ -1966,7 +1966,7 @@ _Tunggu Proses Upload Media_`
 												}) 
 											})
 										} catch (err) {
-											reply('Terjadi kesalahan')
+											reply2('Terjadi kesalahan')
 											}
 									break
 						case 'ytsearch': case 'yts':
