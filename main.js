@@ -54,7 +54,7 @@ const sendButLocation = async (id, text1, desc1, gam1, but = [], options = {}) =
 kma = gam1
 const mediaxxaaa = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
 mhan = mediaxxaaa.message["ephemeralMessage"] ? mediaxxaaa.message.ephemeralMessage : mediaxxaaa
-//mhan = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
+mhan = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
 const buttonMessages = {
 locationMessage: mhan.message.locationMessage,
 contentText: text1,
@@ -109,7 +109,7 @@ await alpha.connect({timeoutMs: 30 * 3000})
         require('./Lord.js')(alpha, message)
     })
     
-/*alpha.on('group-participants-update', async (anu) => {
+alpha.on('group-participants-update', async (anu) => {
 		try {
 			falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
 		remoteJid: "0@s.whatsapp.net"},
@@ -121,7 +121,7 @@ const sendButLocation = async (id, text1, desc1, gam1, but = [], options = {}) =
 kma = gam1
 const mediaxxaaaa = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
 mhan = mediaxxaaaa.message["ephemeralMessage"] ? mediaxxaaaa.message.ephemeralMessage : mediaxxaaaa
-//mhan = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
+mhan = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
 const buttonMessages = {
 locationMessage: mhan.message.locationMessage,
 contentText: text1,
@@ -458,11 +458,11 @@ alpha.on (`CB:action,,battery`, json => {
 })
 }
 ///
-/**
+
  * Uncache if there is file change
  * @param {string} module Module name or path
  * @param {function} cb <optional> 
- */ 
+  
 function nocache(module, cb = () => { }) {
     console.log('Module', `'${module}'`, 'is now being watched for changes')
     fs.watchFile(require.resolve(module), async () => {
@@ -470,11 +470,11 @@ function nocache(module, cb = () => { }) {
         cb(module)
     })
 }
-/**
+
 
  * Uncache a module
  * @param {string} module Module name or path
-*/ 
+
 function uncache(module = '.') {
     return new Promise((resolve, reject) => {
         try {
