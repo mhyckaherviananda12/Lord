@@ -109,7 +109,7 @@ await alpha.connect({timeoutMs: 30 * 3000})
         require('./Lord.js')(alpha, message)
     })
     
-alpha.on('group-participants-update', async (anu) => {
+/*alpha.on('group-participants-update', async (anu) => {
 		try {
 			falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
 		remoteJid: "0@s.whatsapp.net"},
@@ -410,7 +410,7 @@ remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "628
 }
     console.log(clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
   }
-})
+})*/
 antidel = setting.anti_delete
 alpha.on('message-delete', async (m) => {
 if (m.key.remoteJid == 'status@broadcast') return
@@ -458,10 +458,11 @@ alpha.on (`CB:action,,battery`, json => {
 })
 }
 ///
-
+/**
  * Uncache if there is file change
  * @param {string} module Module name or path
  * @param {function} cb <optional> 
+ */ 
 function nocache(module, cb = () => { }) {
     console.log('Module', `'${module}'`, 'is now being watched for changes')
     fs.watchFile(require.resolve(module), async () => {
@@ -469,11 +470,11 @@ function nocache(module, cb = () => { }) {
         cb(module)
     })
 }
-
+/**
 
  * Uncache a module
  * @param {string} module Module name or path
- 
+*/ 
 function uncache(module = '.') {
     return new Promise((resolve, reject) => {
         try {
