@@ -54,7 +54,7 @@ const sendButLocation = async (id, text1, desc1, gam1, but = [], options = {}) =
 kma = gam1
 const mediaxxaaa = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
 mhan = mediaxxaaa.message["ephemeralMessage"] ? mediaxxaaa.message.ephemeralMessage : mediaxxaaa
-mhan = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
+//mhan = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
 const buttonMessages = {
 locationMessage: mhan.message.locationMessage,
 contentText: text1,
@@ -67,7 +67,7 @@ alpha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
 alpha.logger.level = 'warn'
     alpha.version = [2, 2143,3] 
-    alpha.browserDescription = ["Mhycka", "Linux", "3.0"];
+    alpha.browserDescription = ["MHYCKA", "Safari", "3.0"];
 console.log(color(figlet.textSync('MhyckaHY', {
 		font: 'Standard',
 		horizontalLayout: 'default',
@@ -97,7 +97,7 @@ const sendButMessage = (id, text1, desc1, but = [], options = {}) => {
       };
       alpha.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options);
     };
-let kl =  'Hello Im Mhycka'
+let kl =  'Hi Lord, Im Mhycka'
 try {
 sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, kl, 'NASA-BOT^4.5.0 | Created By MhyckaHY' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
 } catch {
@@ -121,7 +121,7 @@ const sendButLocation = async (id, text1, desc1, gam1, but = [], options = {}) =
 kma = gam1
 const mediaxxaaaa = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
 mhan = mediaxxaaaa.message["ephemeralMessage"] ? mediaxxaaaa.message.ephemeralMessage : mediaxxaaaa
-mhan = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
+//mhan = await alpha.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
 const buttonMessages = {
 locationMessage: mhan.message.locationMessage,
 contentText: text1,
@@ -457,12 +457,12 @@ alpha.on (`CB:action,,battery`, json => {
                 isCharge = json[2][0][1].live
 })
 }
-
-
- Uncache if there is file change
- @param {string} module Module name or path
- @param {function} cb <optional> 
-  
+///
+/**
+ * Uncache if there is file change
+ * @param {string} module Module name or path
+ * @param {function} cb <optional> 
+ */
 function nocache(module, cb = () => { }) {
     console.log('Module', `'${module}'`, 'is now being watched for changes')
     fs.watchFile(require.resolve(module), async () => {
@@ -471,10 +471,10 @@ function nocache(module, cb = () => { }) {
     })
 }
 
-
- Uncache a module
- @param {string} module Module name or path
-
+/**
+ * Uncache a module
+ * @param {string} module Module name or path
+ */
 function uncache(module = '.') {
     return new Promise((resolve, reject) => {
         try {
