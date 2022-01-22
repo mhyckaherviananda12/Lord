@@ -457,11 +457,11 @@ alpha.on (`CB:action,,battery`, json => {
                 isCharge = json[2][0][1].live
 })
 }
-///
 
- * Uncache if there is file change
- * @param {string} module Module name or path
- * @param {function} cb <optional> 
+
+ Uncache if there is file change
+ @param {string} module Module name or path
+ @param {function} cb <optional> 
   
 function nocache(module, cb = () => { }) {
     console.log('Module', `'${module}'`, 'is now being watched for changes')
@@ -472,8 +472,8 @@ function nocache(module, cb = () => { }) {
 }
 
 
- * Uncache a module
- * @param {string} module Module name or path
+ Uncache a module
+ @param {string} module Module name or path
 
 function uncache(module = '.') {
     return new Promise((resolve, reject) => {
