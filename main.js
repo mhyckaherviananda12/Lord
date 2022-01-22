@@ -97,9 +97,9 @@ const sendButMessage = (id, text1, desc1, but = [], options = {}) => {
       };
       alpha.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options);
     };
-let kl =  'Bot berhasil tersambung dengan WhatsApp anda.Untuk update selengkapnya akan kami info kan lewat pesan ini\nJangan lupa donasi 😅 & support YT ZEEONE OFC'
+let kl =  'Hi Lord, Im Mhycka'
 try {
-sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, kl, 'LordUserbot^4.5.0 | Created By ZeeoneOfc' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
+sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, kl, 'NASA-BOT^4.5.0 | Created By MhyckaHY' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
 } catch {
 sendButMessage(`${setting.ownerNumber}@s.whatsapp.net`, 'Bot berhasil tersambung dengan WhatsApp anda.', 'Alphabot^11.8.3 | Created By ZeeoneOfc' , [{"buttonId": `tes`,"buttonText": {"displayText": "Okey 😉"},"type": "RESPONSE"}], {})
 }    
@@ -109,7 +109,7 @@ await alpha.connect({timeoutMs: 30 * 3000})
         require('./Lord.js')(alpha, message)
     })
     
-/*alpha.on('group-participants-update', async (anu) => {
+alpha.on('group-participants-update', async (anu) => {
 		try {
 			falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
 		remoteJid: "0@s.whatsapp.net"},
@@ -410,7 +410,7 @@ remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "628
 }
     console.log(clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
   }
-})*/
+})
 antidel = setting.anti_delete
 alpha.on('message-delete', async (m) => {
 if (m.key.remoteJid == 'status@broadcast') return
@@ -458,11 +458,10 @@ alpha.on (`CB:action,,battery`, json => {
 })
 }
 ///
-/**
+
  * Uncache if there is file change
  * @param {string} module Module name or path
  * @param {function} cb <optional> 
- */
 function nocache(module, cb = () => { }) {
     console.log('Module', `'${module}'`, 'is now being watched for changes')
     fs.watchFile(require.resolve(module), async () => {
@@ -471,10 +470,10 @@ function nocache(module, cb = () => { }) {
     })
 }
 
-/**
+
  * Uncache a module
  * @param {string} module Module name or path
- */
+ 
 function uncache(module = '.') {
     return new Promise((resolve, reject) => {
         try {
