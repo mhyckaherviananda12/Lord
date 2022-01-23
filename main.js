@@ -67,7 +67,7 @@ alpha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
 alpha.logger.level = 'warn'
     alpha.version = [2, 2143,3] 
-    alpha.browserDescription = ["MhyckaHY", "Linux", "3.0"];
+    alpha.browserDescription = ["MhyckaHY", "Safari", "3.0"];
 console.log(color(figlet.textSync('MhyckaHY', {
 		font: 'Standard',
 		horizontalLayout: 'default',
