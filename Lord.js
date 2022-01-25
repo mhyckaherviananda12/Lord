@@ -1611,16 +1611,16 @@ if(!q) return reply('Masukkan query lord')
 													}]
 											sendButLocation(from, teks , `Thank for verification 💋\n${namabot}™© | By ${owner_name}`, thumbnail, papako, {contextInfo: { mentionedJid: [sender]}})
 									break
-case 'Mhycka':
+case 'mp4':
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
                     ini_link = args[0]
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo2?apikey=${apikey}&url=${ini_link}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo2?apikey=Hrbot &url=${ini_link}`)
                     get_result = get_result.result
                     ini_txt = `${get_result.title} - ${get_result.size}`
                     ini_buffer = await getBuffer(get_result.thumbnail)
                     await Zeeone.sendMessage(from, ini_buffer, image, { quoted: Ofc, caption: ini_txt })
                     get_audio = await getBuffer(get_result.link)
-                    await Zeeone.sendMessage(from, get_audio, video, { mimetype: 'video/mp4', filename: `${get_result.title}.mp4`, quoted: Ofc })
+                    await Zeeone.sendMessage(of 19 8from, get_audio, video, { mimetype: 'video/mp4', filename: `${get_result.title}.mp4`, quoted: Ofc })
                     break
 						case 'autoregis': case 'register':
 									if (!Ofc.key.fromMe && !isOwner && !isCreator) return reply(mess.only.owner)
