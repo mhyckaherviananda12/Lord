@@ -1612,13 +1612,13 @@ if(!q) return reply('Masukkan query lord')
 											sendButLocation(from, teks , `Thank for verification 💋\n${namabot}™© | By ${owner_name}`, thumbnail, papako, {contextInfo: { mentionedJid: [sender]}})
 									break
 case 'p323':
-reply(mess.wait)
+reply2(mess.wait)
 bo = args.join(" ")
 ini = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/playmp3?query=${bo}&apikey=Alphabot`)
 sendFileFromUrl(ini.results.result, document, {mimetype: 'audio/mp3', filename: `${ini.results.title}.mp3`, quoted: Ofc})
 break 
 case 'ytp3':
-reply(mess.wait)
+reply2(mess.wait)
 if (args.length ==0)return reply('Link nya Mana?')
 ini_link = args.join(" ")
 anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/audio?url=${ini_link}&apikey=Alphabot`)
@@ -1626,7 +1626,7 @@ get = anu.results
 sendFileFromUrl(anu.results.result, document, {mimetype: 'audio/mp3', filename: `${anu.results.title}.mp3`, quoted: Ofc})
 break
 case 'ytp4':
-reply(mess.wait)
+reply2(mess.wait)
 if (args.length ==0)return reply('Link nya Mana Kak?')
 ini_link = args.join(" ")
 anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/video?url=${ini_link}&apikey=Alphabot`)
