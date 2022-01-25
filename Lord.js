@@ -1633,7 +1633,8 @@ ini_link = args.join(" ")
 anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/video?url=${ini_link}&apikey=Alphabot`)
 get = anu.results
 sendFileFromUrl(anu.results.result, document, {mimetype: 'video/mp4', filename: `${anu.results.title}.mp3`, quoted: ftoko})
-break						case 'autoregis': case 'register':
+break
+						case 'autoregis': case 'register':
 									if (!Ofc.key.fromMe && !isOwner && !isCreator) return reply(mess.only.owner)
 									if (args[0] === "on") {
 										if (autoregister === true) return reply(`Mode ${command} telah aktif sebelumnya`)
@@ -3934,3 +3935,4 @@ if (isGroup && budy != undefined) {
 	// console.log(e)
 	}
 } 
+in
