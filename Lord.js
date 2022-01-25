@@ -1611,7 +1611,7 @@ if(!q) return reply('Masukkan query lord')
 													}]
 											sendButLocation(from, teks , `Thank for verification 💋\n${namabot}™© | By ${owner_name}`, thumbnail, papako, {contextInfo: { mentionedJid: [sender]}})
 									break
-case 'mp4':
+case 'playmp4':
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
                     ini_link = args[0]
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo2?apikey=Hrbot&url=${ini_link}`)
