@@ -1620,7 +1620,7 @@ case 'playmp4':
                     ini_buffer = await getBuffer(get_result.thumbnail)
                     await Zeeone.sendMessage(from, ini_buffer, image, { quoted: Ofc, caption: ini_txt })
                     get_audio = await getBuffer(get_result.link)
-                    await Zeeone.sendMessage(of 19 8from, get_audio, video, { mimetype: 'video/mp4', filename: `${get_result.title}.mp4`, quoted: Ofc })
+                    await Zeeone.sendMessage(from, get_audio, video, { mimetype: 'video/mp4', filename: `${get_result.title}.mp4`, quoted: Ofc })
                     break
 						case 'autoregis': case 'register':
 									if (!Ofc.key.fromMe && !isOwner && !isCreator) return reply(mess.only.owner)
