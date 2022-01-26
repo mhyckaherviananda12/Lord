@@ -1876,27 +1876,19 @@ _Tunggu Proses Upload Media_`
 case 'ytmp3':
 case 'youtube':
 case 'ytdl':
-        if(!q) return reply('linknya?'
+        if(!q) return reply('linknya?')
         capti2 = `*Youtube Downloader*`
         ya = fs.readFileSync('./media/yutub.jpg')
         py =await Zeeone.prepareMessage(from, ya, image)
         gbutsan = [{buttonId: `${prefix}ytp4 ${q}`, buttonText: {displayText: '📥Video'}, type: 1},{buttonId: `${prefix}ytp3 ${q}`, buttonText: {displayText: '📥Music'}, type: 1}]
         gbuttonan = {
-
         imageMessage: py.message.imageMessage,
-
         contentText: capti2,
-
         footerText: '```Silahkan Pilih Medianya Kak```',
-
         buttons: gbutsan,
-
         headerType: 4
-
 }
-
         await Zeeone.sendMessage(from, gbuttonan, MessageType.buttonsMessage)
-
         break
 						case 'ytsearch': case 'yts':
 					if (args.length < 1) return reply('Tolong masukan query!')
