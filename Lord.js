@@ -1873,23 +1873,83 @@ _Tunggu Proses Upload Media_`
 											}
 									break
 					 case 'ytmp4':
+
 case 'ytmp3':
+
 case 'youtube':
+
 case 'ytdl':
+
         if(!q) return reply('linknya?')
+
         capti2 = `*Youtube Downloader*`
+
         ya = fs.readFileSync('./media/yutub.jpg')
+
         py =await Zeeone.prepareMessage(from, ya, image)
+
         gbutsan = [{buttonId: `${prefix}ytp4 ${q}`, buttonText: {displayText: '📥Video'}, type: 1},{buttonId: `${prefix}ytp3 ${q}`, buttonText: {displayText: '📥Music'}, type: 1}]
+
         gbuttonan = {
+
         imageMessage: py.message.imageMessage,
+
         contentText: capti2,
+
         footerText: '```Silahkan Pilih Medianya Kak```',
+
         buttons: gbutsan,
+
         headerType: 4
+
 }
+
         await Zeeone.sendMessage(from, gbuttonan, MessageType.buttonsMessage)
+
         break
+        case 'p323':
+
+reply(mess.wait)
+
+bo = args.join(" ")
+
+ini = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/playmp3?query=${bo}&apikey=Alphabot`)
+
+sendFileFromUrl(ini.results.result, document, {mimetype: 'audio/mp3', filename: `${ini.results.title}.mp3`, quoted: Ofc})
+
+break 
+
+case 'ytp3':
+
+reply(mess.wait)
+
+if (args.length ==0)return reply('Link nya Mana?')
+
+ini_link = args.join(" ")
+
+anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/audio?url=${ini_link}&apikey=Alphabot`)
+
+get = anu.results
+
+sendFileFromUrl(anu.results.result, document, {mimetype: 'audio/mp3', filename: `${anu.results.title}.mp3`, quoted: Ofc})
+
+break
+
+case 'ytp4':
+
+reply(mess.wait)
+
+if (args.length ==0)return reply('Link nya Mana Kak?')
+
+ini_link = args.join(" ")
+
+anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/video?url=${ini_link}&apikey=Alphabot`)
+
+get = anu.results
+
+sendFileFromUrl(anu.results.result, document, {mimetype: 'video/mp4', filename: `${anu.results.title}.mp3`, quoted: Ofc})
+
+break 
 						case 'ytsearch': case 'yts':
 					if (args.length < 1) return reply('Tolong masukan query!')
 					var srch = args.join(' ');
