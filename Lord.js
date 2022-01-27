@@ -1611,6 +1611,46 @@ if(!q) return reply('Masukkan query lord')
 													}]
 											sendButLocation(from, teks , `Thank for verification 💋\n${namabot}™© | By ${owner_name}`, thumbnail, papako, {contextInfo: { mentionedJid: [sender]}})
 									break
+case 'playmp4':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
+                    ini_link = args[0]
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo2?apikey=Hrbot&url=${ini_link}`)
+                    get_result = get_result.result
+                    ini_txt = `${get_result.title} - ${get_result.size}`
+                    ini_buffer = await getBuffer(get_result.thumbnail)
+                    await Zeeone.sendMessage(from, ini_buffer, image, { quoted: Ofc, caption: ini_txt })
+                    get_audio = await getBuffer(get_result.link)
+                    await Zeeone.sendMessage(from, get_audio, video, { mimetype: 'video/mp4', filename: `${get_result.title}.mp4`, quoted: Ofc })
+                    break
+						case 'autoregis': case 'register':
+									if (!Ofc.key.fromMe && !isOwner && !isCreator) return reply(mess.only.owner)
+									if (args[0] === "on") {
+										if (autoregister === true) return reply(`Mode ${command} telah aktif sebelumnya`)
+										autoregister = true
+										reply(`${command} di aktifkan`)
+										} else if (args[0] === "off") {
+											if (autoregister === false) return
+											autoregister = false
+											reply(`${command} telah dinonaktifkan`)
+											} else if (!q) {
+												sendButMessage(from, `MODE AUTO REGISTER`, `Choose one`, [
+												{
+													buttonId: 'register on',
+													buttonText: {
+														displayText: `On`,
+														},
+														type: 1,
+														},
+														{
+															buttonId: 'register off',
+															buttonText: {
+																displayText: `Off`,
+																},
+																type: 1,
+																},
+																]);
+															}
+									break;
 						case 'autorespon': case 'autorespond':
 									if (!isOwner && !isCreator && !Ofc.key.fromMe) return reply(mess.only.owner)
 									if (q === 'on'){
@@ -1872,84 +1912,74 @@ _Tunggu Proses Upload Media_`
 												}
 											}
 									break
-					 case 'ytmp4':
-
-case 'ytmp3':
-
-case 'youtube':
-
-case 'ytdl':
-
-        if(!q) return reply('linknya?')
-
-        capti2 = `*Youtube Downloader*`
-
-        ya = fs.readFileSync('./media/yutub.jpg')
-
-        py =await Zeeone.prepareMessage(from, ya, image)
-
-        gbutsan = [{buttonId: `${prefix}ytp4 ${q}`, buttonText: {displayText: '📥Video'}, type: 1},{buttonId: `${prefix}ytp3 ${q}`, buttonText: {displayText: '📥Music'}, type: 1}]
-
-        gbuttonan = {
-
-        imageMessage: py.message.imageMessage,
-
-        contentText: capti2,
-
-        footerText: '```Silahkan Pilih Medianya Kak```',
-
-        buttons: gbutsan,
-
-        headerType: 4
-
-}
-
-        await Zeeone.sendMessage(from, gbuttonan, MessageType.buttonsMessage)
-
-        break
-        case 'p323':
-
-reply(mess.wait)
-
-bo = args.join(" ")
-
-ini = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/playmp3?query=${bo}&apikey=Alphabot`)
-
-sendFileFromUrl(ini.results.result, document, {mimetype: 'audio/mp3', filename: `${ini.results.title}.mp3`, quoted: Ofc})
-
-break 
-
-case 'ytp3':
-
-reply(mess.wait)
-
-if (args.length ==0)return reply('Link nya Mana?')
-
-ini_link = args.join(" ")
-
-anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/audio?url=${ini_link}&apikey=Alphabot`)
-
-get = anu.results
-
-sendFileFromUrl(anu.results.result, document, {mimetype: 'audio/mp3', filename: `${anu.results.title}.mp3`, quoted: Ofc})
-
-break
-
-case 'ytp4':
-
-reply(mess.wait)
-
-if (args.length ==0)return reply('Link nya Mana Kak?')
-
-ini_link = args.join(" ")
-
-anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/downloader/youtube/video?url=${ini_link}&apikey=Alphabot`)
-
-get = anu.results
-
-sendFileFromUrl(anu.results.result, document, {mimetype: 'video/mp4', filename: `${anu.results.title}.mp3`, quoted: Ofc})
-
-break 
+					 case 'ytmp4': case 'ytvideo':{
+									if (!q) return reply(`Example : ${prefix+command} https://youtu.be/kxjMsMST4Rw`)
+									let isLinks = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
+									if (!isLinks) return reply('Eror')
+									reply(mess.wait)
+									var srch = args.join(' ')
+									aramas = await yts(srch);
+		  	 					 server = 'en68'
+						            aramat = aramas.all 
+						            var mulaikah = aramat[0].url                            
+		                  try {
+		                    ytv2(mulaikah, server)
+		                    .then((res) => {
+		                        const { dl_link, thumb, title, filesizeF, filesize } = res
+		                        axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+		                        .then(async (a) => {
+		                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*📩 YOUTUBE-PLAY MP4*${enter}${enter}🐣 *Title* : ${title}${enter}📊 *Quality :* 480kbps${enter}⛎ *Ext* : MP3${enter}♏ *Filesize* : ${filesizeF}${enter}🔗 *Link* : ${a.data}${enter}${enter}_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
+		                        sendMediaURL(from, dl_link, `*📩 YOUTUBE-PLAY MP4*${enter}${enter}🐣 *Title* : ${title}${enter}📊 *Quality :* 480kbps${enter}⛎ *Ext* : MP3${enter}♏ *Filesize* : ${filesizeF}${enter}🔗 *Link* : ${a.data}`).catch(e => {reply('Emror')})
+		                       })
+		                        })
+		                        } catch (err) {
+		                        reply(mess.error)
+		                        }
+							}
+		                   break      
+						case 'play': case 'song':
+									if (args.length === 0) return reply(`Kirim perintah *${prefix}play* _Judul lagu yang akan dicari_`)
+									var srch = args.join(' ')
+									aramas = await yts(srch);
+									aramat = aramas.all 
+									var mulaikah = aramat[0].url
+									try {
+										yta2(mulaikah, 'en68')
+										.then((res) => {
+											const { dl_link, thumb, title, filesizeF, filesize } = res
+											axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+											.then(async (a) => {
+												if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
+												const captions = `🎧 *PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
+												await sendMediaURL(from, thumb, captions)
+												sendMediaURL(from, dl_link).catch(() => reply('error'))
+												}) 
+											})
+										} catch (err) {
+											reply('Terjadi kesalahan')
+											}
+									break
+						case 'ytmp3':
+									if (args.length === 0) return reply(`Kirim perintah *${prefix}play* _url_`)
+									let isLinks = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
+									if (!isLinks) return reply('Eror')
+									var srch = args.join(' ')
+									try {
+										yta2(srch, 'en68')
+										.then((res) => {
+											const { dl_link, thumb, title, filesizeF, filesize } = res
+											axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+											.then(async (a) => {
+												if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
+												const captions = `🎧 *PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
+												await sendMediaURL(from, thumb, captions)
+												sendMediaURL(from, dl_link).catch(() => reply('error'))
+												}) 
+											})
+										} catch (err) {
+											reply('Terjadi kesalahan')
+											}
+									break
 						case 'ytsearch': case 'yts':
 					if (args.length < 1) return reply('Tolong masukan query!')
 					var srch = args.join(' ');
